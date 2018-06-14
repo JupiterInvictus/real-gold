@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+html {
+	width: 100%;
+}
+* {
+	font-family: "PT Sans", sans-serif;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #fff;
+	color: #000;
+	width: 100%;
+}
+.leftchoice {
+	width: 100%;
+	padding: 10px;
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+.leftchoice:hover {
+	background-color: #888;
+	color: #fff;
+}
+.leftchoiceselected {
+	background-color: #ccc;
+}
+.leftchoice img,
+.leftchoicesmall img {
+	width: 32px;
+	padding-right: 10px;
+}
+#prevmonth img,
+#prevmonthsmall img {
+	width: 32px;
+}
+#nextmonth img,
+#nextmonthsmall img {
+	width: 32px;
+}
+#topbar {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #ddd;
+	padding: 10px;
+}
+#cnx_logo {
+	display: none;
+}
+#div_logo {
+	display: none;
+}
+#div_username {
+	display: none;
+}
+#area_title a {
+	font-size: 50px;
+	text-decoration: none;
+	font-weight: 900;
+}
+#leftinfo {
+	font-size: 10px;
+}
+#leftinfo b {
+	font-size: 10px;
+}
+table {
+	border: 1px solid #ccc;
+}
+th {
+	background-color: #ddd;
+	border-bottom: 2px solid #888;
+}
+td {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}

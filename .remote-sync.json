@@ -1,0 +1,20 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "saettem.com",
+  "target": "/var/www/html/gold.locked",
+  "ignore": [
+    "reports/**",
+    "icons/**",
+    "ranks/**"
+  ],
+  "username": "jsa",
+  "password": "Diaphanous0!",
+  "watch": [],
+  "transport": "scp",
+  "port": "2415"
+}

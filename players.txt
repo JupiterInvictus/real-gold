@@ -1,0 +1,12 @@
+player = employee.
+attack = contact
+kill = contact
+mob = customer
+melee = email
+ranged = phone
+
+* players start at level 1.
+	* 2 basic skills available, to take care of the basic attacks.
+	* you begin by learning the ropes. how to use your 2 basic skills.
+	* each kill awards xp.
+	* after a certain amount of xp you gain a level

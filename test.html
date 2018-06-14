@@ -1,0 +1,10 @@
+<script>
+var conn = new WebSocket('wss://azaq.saettem.com:8080');
+conn.onopen = function(e) {
+    console.log("Connection established!");
+};
+
+conn.onmessage = function(e) {
+    console.log(e.data);
+};
+</script>

@@ -1,0 +1,62 @@
+body {
+	background: #03080e;
+	padding: 1rem;
+	color: #ccc;
+}
+#logindiv {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#mainLogo {
+	border-bottom: 1px solid #23282e;
+}
+
+.super-black {
+	color: #000;
+}
+.text-gold {
+	color: gold;
+}
+
+a {
+	color: #B8C2CC;
+}
+a:hover {
+	color: #DAE1E7;
+}
+.logout-button {
+	right: 2rem;
+	top: 1.5rem;
+}
+
+.user-div {
+	min-width: 10rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	display: inline-block;
+}
+
+table {
+	border-spacing: 0;
+}
+
+th {
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 20px;
+}
+
+td {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 0.5rem;
+}
+
+td > i {
+	border-radius: 3px;
+}
+
+tr:hover {
+	background: rgba(255, 255, 255, 0.2);
+}

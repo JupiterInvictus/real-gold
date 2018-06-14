@@ -1,0 +1,82 @@
+body {
+	background: rgba(0, 0, 0, 0.03);
+	color: #666;
+}
+.button {
+	background: #ddd;
+	color: rgba(0, 0, 0, 0.7);
+}
+.button:hover {
+	background: #ddd;
+	color: #000;
+}
+tfoot {
+	background: rgba(0,0,50,0.2);
+	color: rgba(0, 0, 0, 0.3);
+}
+tfoot td {
+	border-top: 1px solid #ccc;
+}
+.pad {
+	background: #fff;
+}
+.pad .title {
+	color: #222;
+}
+.module-general > h1 {
+	color: rgba(0, 0, 0, 0.3);
+}
+.module-general > h1 > a {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-month-previous {
+}
+.icon-month-previous:hover {
+}
+.icon-month-previous:hover a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.icon-month-previous a {
+	color: rgba(255, 255, 255, 1);
+}
+.icon-month-next {
+}
+.icon-month-next a {
+	color: rgba(255, 255, 255, 1);
+}
+.icon-month-next:hover {
+}
+.icon-month-next:hover a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+table.sortable thead tr::before {
+	border-bottom: 2px solid #ccc;
+}
+table.sortable tfoot tr::before {
+	border-top: 1px solid #ccc;
+}
+
+th {
+	border-bottom: 5px solid #ddd;
+	color: #888;
+}
+
+td {
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	//background: rgba(0, 0, 0, 0.03);
+}
+
+.goodie {
+	color: #0a0;
+}
+.baddie {
+	color: #a00;
+}
+
+
+.big-title {
+	color: rgba(0, 0, 0, 1);
+}

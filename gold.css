@@ -1,0 +1,263 @@
+body {
+	background: rgba(0, 0, 0, 0.03);
+	color: #666;
+}
+.button {
+	background: #ddd;
+	color: rgba(0, 0, 0, 0.7);
+}
+.button:hover {
+	background: #ddd;
+	color: #000;
+}
+tfoot {
+	background: rgba(0,0,50,0.2);
+	color: rgba(0, 0, 0, 0.3);
+}
+tfoot td {
+	border-top: 1px solid #ccc;
+}
+.pad {
+	background: #fff;
+}
+.pad .title {
+	color: #222;
+}
+.module-general > h1 {
+	color: rgba(0, 0, 0, 0.3);
+}
+.module-general > h1 > a {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-month-previous {
+}
+.icon-month-previous:hover {
+}
+.icon-month-previous:hover a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.icon-month-previous a {
+	color: rgba(255, 255, 255, 1);
+}
+.icon-month-next {
+}
+.icon-month-next a {
+	color: rgba(255, 255, 255, 1);
+}
+.icon-month-next:hover {
+}
+.icon-month-next:hover a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+table.sortable thead tr::before {
+	border-bottom: 2px solid #ccc;
+}
+table.sortable tfoot tr::before {
+	border-top: 1px solid #ccc;
+}
+
+th {
+	border-bottom: 5px solid #ddd;
+	color: #888;
+}
+
+td {
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	//background: rgba(0, 0, 0, 0.03);
+}
+
+.goodie {
+	color: #0a0;
+}
+.baddie {
+	color: #a00;
+}
+
+
+.big-title {
+	color: rgba(0, 0, 0, 1);
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////
+
+mobile screens
+
+//////////////////////////////////////////////////////////////////////////////////*/
+@media all and (max-width: 900px) {
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	.topleftcorner {
+		display: none;
+	}
+
+	.div_left_areasmall {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		box-sizing: border-box;
+		user-select: none;
+		padding-left: 5%;
+		position: fixed;
+		padding-top: 0;
+		height: auto;
+		clear: right;
+		width: 100vw;
+		z-index: 2;
+		padding: 0;
+		margin: 0;
+		left: 0;
+		top: 0;
+		opacity: 1;
+	}
+	table.tabler {
+		width: 100vw;
+	}
+	table.tabler td {
+		padding: 2px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	table.tabler th {
+		padding: 1px;
+	}
+
+	.smiley {
+		border: 5px solid rgba(0, 0, 0, 0.1);
+		transform: translateX(-50%);
+		background-color: #fd0;
+		display: inline-block;
+		border-radius: 50%;
+		position: relative;
+		height: 50vw;
+		width: 50vw;
+		left: 50vw;
+	}
+	.eye-1 {
+		border: 2px solid rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		border-radius: 50%;
+		position: absolute;
+		height: 10vw;
+		width: 10vw;
+		left: 25vw;
+		top: 15vw;
+	}
+	.iris-1 {
+		background-color: #000;
+		position: absolute;
+		border-radius: 50%;
+		height: 5vw;
+		width: 5vw;
+		left: 27vw;
+		top: 18vw;
+	}
+	.eye-2 {
+		border: 2px solid rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		position: absolute;
+		border-radius: 50%;
+		height: 10vw;
+		width: 10vw;
+		left: 15vw;
+		top: 15vw;
+	}
+	.iris-2 {
+		background-color: #000;
+		position: absolute;
+		border-radius: 50%;
+		left: 17.5vw;
+		height: 5vw;
+		width: 5vw;
+		top: 18vw;
+	}
+	.mouth {
+		border-bottom: 2px solid black;
+		transform: translateX(-50%);
+		border-radius: 50%;
+		position: absolute;
+		height: 20vw;
+		width: 25vw;
+		left: 25vw;
+		top: 19vw;
+	}
+
+	.leftchoicesmall {
+		position: relative;
+		font-size: 1vh;
+		width: 2.8rem;
+		float: left;
+		padding: 0;
+		top: 0;
+	}
+
+	.div_right_areasmall {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0;
+	}
+
+	.area_titlesmall {
+		box-sizing: border-box;
+		position: relative;
+		text-align: center;
+		font-size: 10vw;
+		padding-top: 6vh;
+		width: 100vw;
+		float: none;
+		clear:both;
+		z-index: 1;
+		left: 0;
+	}
+
+	.area_titlesmall a {
+		color: #fff;
+	}
+
+	table .dashboard {
+		box-sizing: border-box;
+		width: 100vw;
+	}
+
+	.dashboardtd {
+		border-radius: none;
+		border: none;
+	}
+	.valuearea {
+		box-sizing: border-box;
+		border-radius: 0;
+		padding-right: 0;
+		padding-top: 6vw;
+		padding-left: 0;
+		font-size: 5vw;
+	}
+	.xtoggle {
+		display: none;
+	}
+	.dashboard-metric-name {
+		font-size: 8px;
+		background: #333;
+	}
+	td {
+		color: #444;
+	}
+	th {
+		font-size: 10px;
+	}
+	tr::before {
+		font-size: 8px;
+		width: 20px;
+	}
+	table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+		content: 0;
+	}
+	.prevmonthsmall {
+		position: relative;
+		user-select: none;
+		display: block;
+	}
+
+}

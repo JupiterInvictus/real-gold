@@ -1,0 +1,9 @@
+cp ../index.php index.php.backup
+cp ../*.css backup/
+cp ../goldserver.php goldserver.php.backup
+cp ../zm* backup/
+
+cp index.php ../
+cp *.css ../
+cp goldserver.php ../
+cp zm* ../

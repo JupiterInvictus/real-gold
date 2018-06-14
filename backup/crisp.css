@@ -1,0 +1,288 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+
+body {
+	font-family: 'Roboto', 'Roboto Condensed', sans-serif;
+	background-color: #3050d0;
+	color: #ddd;
+}
+
+a {
+	color: #2Cf;
+	text-decoration: none;
+}
+a:hover {
+	color: #5FF;
+}
+
+#topbar {
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	color: #ddd;
+	background-image: linear-gradient(#3050d0,#103090);
+
+}
+	#startdatepicker {
+		position: fixed;
+		top: 11px;
+		right: 50%;
+		font-size: 0.9em;
+		color: #bde;
+		font-weight: 100;
+	}
+	#enddatepicker {
+		position: fixed;
+		top: 11px;
+		left: 50%;
+		color: #bde;
+		font-weight: 100;
+		font-size: 0.9em;
+	}
+	select,input {
+		border: 1px solid #2080c0;
+		border-radius: 1em;
+		background: rgba(0, 0, 100, 0.2);
+		color: #fff;
+		font-family: Roboto;
+		text-align: center;
+		font-size: 12pt;
+		font-weight: 100;
+	}
+	#preferred_team {
+		position: fixed;
+		top: 11px;
+		right: 11px;
+		color: #bde;
+		font-size: 0.7em;
+	}
+
+
+#div_left_areasmall {
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	width: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: rgba(0, 0, 100, 0.2);
+	abackground-image: linear-gradient(#3050d0,#103090);
+	z-index: 2;
+}
+
+	.leftchoicesmall {
+		position: relative;
+		top: 0px;
+	}
+	.leftchoicesmall img {
+		width: 32px;
+		padding-left: 10px;
+		padding-bottom: 5px;
+		filter: grayscale(100%) brightness(70%);
+	}
+	.leftchoicesmall img:hover {
+		cursor: pointer;
+		filter: grayscale(100%) brightness(120%);
+	}
+	.leftchoiceselected {
+		background-color: #333;
+	}
+	#leftinfo {
+		position: fixed;
+		right: 0px;
+		bottom: 0px;
+		z-index: 1;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 1em;
+		font-weight: 100;
+		color: #999;
+		width: 150px;
+		font-size: 8pt;
+		border-radius: 2em;
+	}
+
+
+
+
+
+
+
+#div_right_areasmall {
+	position: absolute;
+	left: 60px;
+	top: 0px;
+	height: 100%;
+	right: 0px;
+	color: #fff;
+	font-weight: 100;
+	background-image: linear-gradient(#103090,#3050d0);
+}
+	#area_titlesmall {
+		position: absolute;
+		font-size: 4em;
+		font-weight: 100;
+		left: 30px;
+		top: 55px;
+		font-family: Roboto;
+		letter-spacing: -0.08em;
+	}
+	#area_titlesmall a {
+		color: #fff;
+		text-decoration: none;
+	}
+	#area_body {
+		position: relative;
+		top: 140px;
+		left: 30px;
+		padding-bottom: 4em;
+	}
+
+#prevmonthsmall {
+		position: fixed;
+		left: 50%;
+		transform: translate(-270px);
+		top: 8px;
+		z-index: 5;
+	}
+	#prevmonthsmall img {
+		width: 32px;
+		height: 32px;
+	  -webkit-filter: grayscale(100%) brightness(50%);
+	  filter: grayscale(100%) brightness(50%);
+	}
+	#prevmonthsmall img:hover {
+		  -webkit-filter: grayscale(0%) brightness(100%);
+	  filter: grayscale(0%) brightness(100%);
+	}
+	#nextmonthsmall {
+		position: fixed;
+		right: 50%;
+		transform: translate(270px);
+		top: 8px;
+		z-index: 5;
+	}
+	#nextmonthsmall img {
+		width: 32px;
+		height: 32px;
+	  -webkit-filter: grayscale(100%) brightness(50%);
+	  filter: grayscale(100%) brightness(50%);
+	}
+	#nextmonthsmall img:hover {
+		  -webkit-filter: grayscale(0%) brightness(100%);
+	  filter: grayscale(0%) brightness(100%);
+	}
+	#currentmonth {
+		position: fixed;
+		left: 50%;
+		transform: translate(-400px,0);
+		top: 14px;
+		font-size: 0.9em;
+		font-weight: 100;
+	}
+	#lastsevendays {
+		position: fixed;
+		left: 50%;
+		transform: translate(300px,0);
+		top: 14px;
+		font-size: 0.9em;
+		font-weight: 100;
+	}
+
+	table.sortable thead {
+	  font-weight: bold;
+	  cursor: pointer;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+	    content: " \25B4\25BE"
+	}
+	table.sortable tbody {
+	    counter-reset: sortabletablescope;
+	}
+	table.sortable thead tr::before {
+	    content: ""	;
+	    display: table-cell;
+	}
+	table.sortable tfoot tr::before {
+	    content: ""	;
+	    display: table-cell;
+		border-bottom: 1px solid rgba(255,255,255,0.15);
+	}
+	table.sortable tbody tr::before {
+	    content: "#" counter(sortabletablescope);
+	    counter-increment: sortabletablescope;
+	    display: table-cell;
+		padding: 1em;
+		color: #fff;
+		opacity: 0.8;
+		border-bottom: 1px solid rgba(255,255,255,0.07);
+
+	}
+
+	.sortable th {
+		padding: 1em;
+		border-bottom: 5px solid rgba(255,255,255,0.15);
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.sortable td {
+		border-bottom: 1px solid rgba(255,255,255,0.15);
+		border-right: 1px solid rgba(155,155,155,0.1);
+		padding: 1em;
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.sortable tfoot {
+		background: rgba(0, 0, 0, 0.3);
+		font-weight: bold;
+		display: table-header-group;
+	}
+
+
+/* Big table */
+.bt {
+
+}
+.bt td:hover {
+	opacity: 0.4;
+	background-color: #000;
+	color: #fff;
+	transition: all .25s ease-in-out;
+	transform: scale(1.1,1.1);
+}
+	.bt td {
+		font-weight: 900;
+	}
+	.bt a {
+		font-weight: 900;
+	}
+
+
+.rank-text {
+	font-weight: 900;
+	opacity: 0.5;
+	font-size: 9pt;
+	text-transform: capitalize;
+	display: block;
+	clear: both;
+}
+.name-text {
+	font-size: 14pt;
+	text-transform: uppercase;
+}
+
+
+.level-text {
+	opacity: 0.7;
+	font-weight: 500;
+}
+.race-text {
+	color: #fff;
+	font-weight: 900;
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 10px;
+	opacity: 0.3;
+}
